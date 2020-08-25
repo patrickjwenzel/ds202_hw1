@@ -1,0 +1,95 @@
+---
+title: 'Homework #1'
+author: "Patrick Wenzel"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This homework is more or less a tutorial that helps you set up the coding environment used in this course, and familiarizes you with the format of the assignment submission. 
+As a pre-requisite of this homework, first install R, and then the RStudio (the free version of Rstudio Desktop). 
+
+1. Create a folder named `ds202_hw1`, and **either** create an RMarkDown file `hw1.Rmd` under this folder **or** move the provided template into this folder. `hw1.Rmd` will include your solutions. The file and folder names are *case-sensitive*, which means `hw1.Rmd` and `HW1.rmd` are different. *It is crucial to follow the exact folder structure and file names* in this course, so that your homework can be reproduced. The correct folder structure is
+
+    ```
+    ds202_hw1
+    |-- hw1.Rmd
+    |-- hw1.html (generated after knitting)
+    ```
+    
+    Answer: Done
+
+2. Write your name in the YAML of your homework `Rmd` file.
+
+    Answer: Done
+
+3. Write a paragraph to introduce yourself. Set your name in bold font and your major in italic. 
+
+    Answer:
+    
+    Name: **Patrick Wenzel**
+    
+    Major: *Computer Engineering*
+    
+    Minor: *Data Science*
+    
+    Hi, my name is Patrick Wenzel and I am a senior majoring in computer engineering and minoring in data science. I originally got interested in data science in high school but decided to major in computer engineering instead and after the internship I had at 3M last summer, I realized I definitely want to go into the data science field later in my career. I had another internship with 3M this summer where I was able to meet a lot of data scientists hear more about what they do and I am hoping after a couple of years working there to move over to a data scientist role. For fun I like to hangout with friends/family, play basketball, golf, and on occasion video games.
+  
+4. Write a paragraph describing a job that you think is related to data science. Include a hyperlink and an image. Make sure your answer is in a nice format to read. 
+
+    Answer:
+    Someone working for a car company working on their autonomous vehicle's team would be a job related to data science. These people are taking in data from the car's camera(s) and writing algorithms that analyze all of that data to decide where to poition the car in the road, if there is a turn coming up, traffic lights and signs, and if there are any objects in the road ahead.
+    
+    [Computer Vision with Autonomous Vehicles](https://www.analyticsinsight.net/computer-vision-makes-autonomous-vehicles-intelligent-and-reliable/#:~:text=The%20technology%20can%20enable%20self,classify%20and%20detect%20different%20objects.&text=These%20tech%2Doriented%20vehicles%20process,and%20avoid%20collisions%20and%20accidents.)
+    
+    Computer Vision Picture Example: ![](C:\Courses\Fall 2020\DS 202\computer-vision-example.jpg)  
+  
+5. What data topic will you be most interested in? (Optional) Provide a source of such dataset if you have.
+
+    Answer: 
+    The topic I am most interested in for this course is 'implement a basic data processing pipeline'. I am excited for this because I know it will be a fundamental part of any data science work I do in the future. The data science topic I am most interested in is computer vision. I have met with data scientist who do a lot of computer vision and although I do not currently understand how it works, I find it very fascinating and the applications/projects they were working on are ones I would love to work on one day.http://www.cs.toronto.edu/~kriz/cifar.html
+  
+6. To check that your R and Rstudio installation is correct, find the version of R by entering `version` into the R console. Include this command into a R code chuunk in your solution `Rmd` file to have it automatically printed in the knitted html file. 
+
+    Answer: 
+    ```{r}
+    R.version.string
+    ```
+  
+7. Install git. 
+    - If you are on Windows: 
+        a. Install [Git for Windows](https://gitforwindows.org/). In the coming weeks we will use the Git Bash (but not the Git GUI). 
+        b. After installation, set up Rstudio to use Git bash as the shell for the Terminal: Open RStudio, click Tools--Global Options--Terminal; under **Shells**, select Git Bash; click OK. 
+        c. In the main menu of RStudio: click Tools--Terminal--New Terminal. If you have a `$` before your prompt, then you should be good to go.
+    - If you are on Linux or macOS, Git has probably been installed by default, so you do not need to install anything. Just click the Terminal tab (above the R Console).
+
+    Answer: Done
+  
+8. What is the version of your Git? To find out, go to the Terminal tab in RStudio (right to the Console tab), and type in the following command. If it works, this shows that the setup of your terminal and Git is correct. 
+<!-- Then explore the bash command line and Git. -->
+
+    ```
+    git --version
+    ```
+
+    Answer:
+    
+    $ git --version
+    
+    git version 2.23.0.windows.1
+  
+9. Configure your git username and user email by modifying and entering the following commands into the terminal
+
+    ```
+    git config --global user.name "your first and last name"
+    git config --global user.email "yourEmail"
+    ```
+
+    Answer: Done
+  
+
+10. Register a [GitHub](https://www.github.com) account. What is your username?
+
+    Answer: [patrickjwenzel](https://github.com/patrickjwenzel)
